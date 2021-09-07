@@ -1,0 +1,242 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "6560d6df-4b1b-45f9-ae67-d259e9d4507a": {
+        "id": "6560d6df-4b1b-45f9-ae67-d259e9d4507a",
+        "parent": null,
+        "name": "0609_deptest.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "0609_deptest.py",
+        "cursor": {
+          "lineNumber": 1,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python3.9",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "0609deptest"
+        },
+        "triggers": [
+          {
+            "resourceName": "apighirutesttestdeptestget",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1630921473794,
+        "testCases": {
+          "04805193-898e-42fa-b928-66cc57ce09c5": {
+            "id": "04805193-898e-42fa-b928-66cc57ce09c5",
+            "name": "Test event",
+            "functionId": "6560d6df-4b1b-45f9-ae67-d259e9d4507a",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "5287e2a5-1be7-48a7-be81-c64f46793346": {
+        "id": "5287e2a5-1be7-48a7-be81-c64f46793346",
+        "parent": null,
+        "name": "requirements.txt",
+        "type": "TEXT_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "requirements.txt"
+      },
+      "8fc37f42-6484-4298-9646-0b06755dcc8e": {
+        "id": "8fc37f42-6484-4298-9646-0b06755dcc8e",
+        "parent": null,
+        "name": "subdir1",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "32b2177d-a57f-449a-8efa-5f24c5855467"
+        ],
+        "isRemovable": true,
+        "filePath": "subdir1"
+      },
+      "32b2177d-a57f-449a-8efa-5f24c5855467": {
+        "id": "32b2177d-a57f-449a-8efa-5f24c5855467",
+        "parent": "8fc37f42-6484-4298-9646-0b06755dcc8e",
+        "name": "subdir2",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "5eec9fa1-e332-43eb-b368-646056e96302",
+          "4a77f9da-9a9a-45e9-bc63-153e64ff8562"
+        ],
+        "isRemovable": true,
+        "filePath": "subdir1/subdir2"
+      },
+      "5eec9fa1-e332-43eb-b368-646056e96302": {
+        "id": "5eec9fa1-e332-43eb-b368-646056e96302",
+        "parent": "32b2177d-a57f-449a-8efa-5f24c5855467",
+        "name": "graphfile.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "subdir1/subdir2/graphfile.py",
+        "cursor": {
+          "lineNumber": 3,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python3.9",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "graphfile"
+        },
+        "triggers": [
+          {
+            "resourceName": "apighirutesttestgraphget",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1630987269708,
+        "testCases": {
+          "484202dd-142b-4e01-a4f4-fa280e676ccd": {
+            "id": "484202dd-142b-4e01-a4f4-fa280e676ccd",
+            "name": "Test event",
+            "functionId": "5eec9fa1-e332-43eb-b368-646056e96302",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      },
+      "4a77f9da-9a9a-45e9-bc63-153e64ff8562": {
+        "id": "4a77f9da-9a9a-45e9-bc63-153e64ff8562",
+        "parent": "32b2177d-a57f-449a-8efa-5f24c5855467",
+        "name": "__init__.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "subdir1/subdir2/__init__.py"
+      }
+    },
+    "openFiles": [
+      "6560d6df-4b1b-45f9-ae67-d259e9d4507a",
+      "5eec9fa1-e332-43eb-b368-646056e96302"
+    ],
+    "currentFileId": "5eec9fa1-e332-43eb-b368-646056e96302",
+    "resources": {
+      "apighirutesttestgraphget": {
+        "name": "apighirutesttestgraphget",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "hirutest",
+          "apiId": "8brfemr2ql",
+          "endpointType": "EDGE",
+          "rootResourceId": "npg40h7hz4",
+          "existingResources": {
+            "/test/tesr": "jtq6tu",
+            "/": "npg40h7hz4",
+            "/dep/get": "rmaz8n",
+            "/test": "xo0zg9",
+            "/dep": "yd7s7e"
+          },
+          "resourceMode": 0,
+          "resourceName": "test/graph",
+          "resourcePath": "/test/graph",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "TEst",
+          "stageDeploymentId": "4524ke",
+          "mode": 1
+        }
+      },
+      "apighirutesttestdeptestget": {
+        "name": "apighirutesttestdeptestget",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 1,
+          "apiName": "hirutest",
+          "apiId": "8brfemr2ql",
+          "endpointType": "EDGE",
+          "rootResourceId": "npg40h7hz4",
+          "existingResources": {
+            "/test/tesr": "jtq6tu",
+            "/": "npg40h7hz4",
+            "/dep/get": "rmaz8n",
+            "/test": "xo0zg9",
+            "/dep": "yd7s7e"
+          },
+          "resourceMode": 0,
+          "resourceName": "test/deptest",
+          "resourcePath": "/test/deptest",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "TEst",
+          "stageDeploymentId": "4524ke",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "numpy": {
+          "name": "numpy",
+          "version": "1.21.2",
+          "dev": false,
+          "language": "python"
+        },
+        "scipy": {
+          "name": "scipy",
+          "version": "1.7.1",
+          "dev": false,
+          "language": "python"
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.9.4",
+    "projectName": "0609_deptest",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1630987275823
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "0609_deptest",
+      "url": "https://github.com/HirudineeADRT/0609_deptest"
+    }
+  }
+}
